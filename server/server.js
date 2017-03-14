@@ -11,7 +11,7 @@ app.use('/bundles', express.static(__dirname + '/../bundles'));
 
 app.use('/api', router);
 
-var port = process.env.port || 8080;
+var port = process.env.port || 3100;
 
 const server = app.listen(port, function() {
   console.log(`Orderly Phoenix listening at ${port}`);
