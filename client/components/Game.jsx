@@ -68,6 +68,7 @@ class Game extends React.Component {
           </Col>
           <Col md="6">
             <Image image={this.state.image} />
+            <button onClick={this.getChapter}>Next Level</button>
           </Col>
         </Row>
       </Container>

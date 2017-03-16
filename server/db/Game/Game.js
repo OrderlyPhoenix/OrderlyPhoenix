@@ -10,7 +10,8 @@ const gameSchema = new Schema({
   instructionText: String,
   learnText: String,
   points: Number,
-  solution: Array
+  solution: Array,
+  lastLevel: Boolean
 });
 
 module.exports = mongoose.model('Game', gameSchema);

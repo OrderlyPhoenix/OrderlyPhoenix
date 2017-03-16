@@ -1,8 +1,276 @@
 [
   {
-    "level": "1", "chapter": "1", "firstImage": "https://s3-us-west-1.amazonaws.com/codr/lvl_1_img_1.png", "secondImage": "https://s3-us-west-1.amazonaws.com/codr/lvl_1_img_2.png", "challengeText": ["input1", "apples"], "instructionText": "Fill in the text below so that the box is labeled.", "learnText": "To start coding, we need a way to save the values from our coding.", "points": "25", "solution": [{"input1": "var"}]
+    "level": 1,
+    "chapter": 1,
+    "firstImage": "https://s3-us-west-1.amazonaws.com/codr/L1I1.png",
+    "secondImage": "https://s3-us-west-1.amazonaws.com/codr/L1I2.png",
+    "challengeText": [
+      "input1",
+      "apples"
+    ],
+    "instructionText": "Fill in the text below so that the box is labeled",
+    "learnText":
+    "To start coding, we need a way to 'save' the values from our coding. We do this by defining a variable with a name that will be tied to that value just as the value is tied to the variable name. Once you create (or declare) a variable as having a particular name, you can then call up that value by typing the variable name. The way to declare a variable is: var bananas;",
+    "points": 25,
+    "solution": [{
+      "input1": "var"
+    }],
+    "lastLevel": false
   },
   {
-    "level": "2", "chapter": "1", "firstImage": "https://s3-us-west-1.amazonaws.com/codr/lvl_2_img_1.png", "secondImage": "https://s3-us-west-1.amazonaws.com/codr/lvl_2_img_2.png", "challengeText": ["var x = ‘apples’", "\n", "What is x?", "input1"], "instructionText": "Fill in x.", "learnText": "Let’s do some more practice! I’ve created a variable x. Can you tell us what x is pointing to?", "points": "25", "solution": [{"input1": "apples"}]
+    "level": 2,
+    "chapter": 1,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var x = ‘apples’",
+      "\n",
+      "What is x?",
+      "input1"
+    ],
+    "instructionText": "Fill in x",
+    "learnText": "Let’s do some more practice! I’ve created a variable x. Can you tell us what x is pointing to?",
+    "points": 25,
+    "solution": [{
+      "input1": "apples"
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 3,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is 6 + 10?",
+      "input1",
+      "\n",
+      "What is 6 - 2?",
+      "input2"
+    ],
+    "instructionText": "How could we solve these math problems?",
+    "learnText": "Did you know that it’s also possible to do math using programming? It works almost the exact same way real-life math does. Here’s a quick look at some problems: \n 1+1 equals 2 \n 1-1 equals 0",
+    "points": 25,
+    "solution": [{
+      "input1": 16,
+      "input2": 4
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 4,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is 8 * 9?",
+      "input1",
+      "\n",
+      "What is 5 / 1?",
+      "input2"
+    ],
+    "instructionText": "Here are some more problems, this time with multiplication and division? Can you figure out the answers?",
+    "learnText": "We can also do multiplication and division using programming. Multiplication is done with ‘*’, while division is done with ‘/’. Here’s a quick look at some problems: \n \n 1*1 equals 1 \n 1/1 equals 1",
+    "points": 25,
+    "solution": [{
+      "input1": 72,
+      "input2": 5
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 5,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is -8*9?",
+      "input1",
+      "\n",
+      "What is 1/5?",
+      "input2"
+    ],
+    "instructionText": "We’ve adjusted the problems to use negative numbers and decimals. How do you think this will change the answer?",
+    "learnText": "Like real math, programming math also uses negatives and decimal numbers (but not fractions!). The rules are the exact same as in real math!",
+    "points": 25,
+    "solution": [{
+      "input1": -72,
+      "input2": 0.2
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 6,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var x = 6+10 – (-8*9);",
+      "\n",
+      "What is x?",
+      "input1"
+    ],
+    "instructionText": "Time to combine variables and math! We’ve created a variable that’s also a mathematical equation. What do you think happens now?",
+    "learnText": "One of the fun things about programming is combining different concepts. It’s common to create variables that are mathematical equations, or even mathematical equations that use variables. For instance: \n \n var x = 1+1; \n \n In this case, x equals ‘2’!",
+    "points": 25,
+    "solution": [{
+      "input1": 88
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 7,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "7 < 2;",
+      "\n",
+      "Is this ‘true’ or ‘false’?",
+      "input1"
+    ],
+    "instructionText": "Do you think this is true or false?",
+    "learnText": "Programming also has a concept called booleans. A boolean will either be ‘true’ or ‘false’. But ‘True’ or ‘False’ do not work!",
+    "points": 5,
+    "solution": [{
+      "input1": false
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 8,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "5 > 9",
+      "input1",
+      "\n",
+      "10 <= 10",
+      "input2",
+      "\n",
+      "3 === 10",
+      "input3",
+      "\n",
+      "3 !=== 10",
+      "input4"
+    ],
+    "instructionText": "Are the following things true or false? Remember not to capitalize!",
+    "learnText": "Finally, just like math, programming has comparative operators like ‘greater than’ or ‘less than’. Here’s a full list: \n \n Greater than: > \n Less than: < \n Greater than or equal to: >= \n Less than or equal to: <= \n Equal to: === \n Not equal to: !==",
+    "points": 25,
+    "solution": [{
+      "input1": false,
+      "input2": true,
+      "input3": false,
+      "input4": true
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 9,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "if (5 < 10) {",
+      "\n",
+      "  var x = 2;",
+      "\n",
+      "}",
+      "input1"
+    ],
+    "instructionText": "We’ve created a program just like the above, but with a different condition. What is ‘x’?",
+    "learnText": "Time for a fundamental feature of programming: ‘if’ statements. Let’s say we want to write a program in which we create a variable ‘x’ depending on certain conditions. If 10 is more than 5, we set ‘x’ as 1. Let’s take a look: \n \n if (10 > 5) { \n   var x = 1; \n } \n \n Here’s exactly how the statement works: \n \n First we add an ‘if’ keyword. \n Next the ‘if’ keyword, we add a condition inside two parentheses ‘( )’. \n Then we add a pair of curly braces ‘{ }’. \n If the condition is true, we run the code inside the curly braces. \n \n Here the condition is true: 10 is greater than 5. \n Therefore we run the code inside the curly braces: x = 1",
+    "points": 25,
+    "solution": [{
+      "input1": 2
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 10,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "if (5 < 10) {",
+      "\n",
+      "  var x = 2;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = 3;",
+      "\n",
+      "}",
+      "\n",
+      "input1"
+    ],
+    "instructionText": "What is ‘x’ now? Is the condition inside the first parenthesis still true?",
+    "learnText": "What happens if the condition is false? For instance, what happens if we say: \n \n if (5 > 10) { \n   var x = 1; \n } \n \n In that case, we need to use an ‘if’ / ‘else’ statement: \n \n if (5 > 10) { \n   var x = 1; \n } else {\n   var x = 2; \n } \n \n We add ‘else’ at the very end of our statement. \n \n If the condition is ‘true’, the code inside the first pair of curly braces will run. \n ‘x’ would be 1. \n If the condition is ‘false’, the code inside the second pair of curly braces will run. \n ‘x’ would be 2. \n \n Here the condition is ‘false’, so x is equal to 2.",
+    "points": 20,
+    "solution": [{
+      "input1": 2
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 11,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var y = ‘apple’;",
+      "\n",
+      "if (y === ‘apple’) {",
+      "\n",
+      "  var x = ‘apple’;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = ‘orange’;",
+      "\n",
+      "}",
+      "\n",
+      "input 1"
+    ],
+    "instructionText": "Can you solve the problem now? What is ‘x’?",
+    "learnText": "Let’s do some more practice. We’ve created another ‘if’ condition. Except this program uses knowledge we’ve previously learned, like ‘===’.",
+    "points": 10,
+    "solution": [{
+      "input1": "apple"
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 12,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var y = ‘apple’;",
+      "\n",
+      "if (y === ‘orange’) {",
+      "\n",
+      "  var x = ‘orange’;",
+      "\n",
+      "} else if (y === ‘banana’ {",
+      "\n",
+      "  var x = ‘banana’;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = ‘apple’",
+      "\n",
+      "}",
+      "\n",
+      "input"
+    ],
+    "instructionText": "We’ve modified the previous equation to have another condition? What do you think ‘x’ is now?",
+    "learnText": "How tough was that? Hopefully not too tough. :) But what happens if we want to add more than one condition? Then it’s time for the ‘else if’ condition! Let’s take a look at the following: \n \n var y = 10; \n \n if (y < 0) { \n   var x = ‘apple’; \n } else if (y > 5) { \n   var x = ‘orange’; \n} else { \n   var x = ‘banana’; \n } \n \n Here we have the following structure: \n \n if ( /* initial condition */ ) { \n   // do something \n } else if ( /* another condition */ { \n   // do something else \n } else { /* if none of the conditions are true */ \n   // do the third thing \n} \n \n y equals 10. \n If y < 0, x equals ‘apple’. \n If y > 5, x equals ‘orange’. \n Otherwise x equals ‘banana’. \n \n y > 5, so x equals ‘orange.’",
+    "points": 25,
+    "solution": [{
+      "input1": "apple"
+    }],
+    "lastLevel": false
   }
 ]
