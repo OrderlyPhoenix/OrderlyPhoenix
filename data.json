@@ -14,7 +14,8 @@
     "points": 25,
     "solution": [{
       "input1": "var"
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 2,
@@ -32,7 +33,8 @@
     "points": 25,
     "solution": [{
       "input1": "apples"
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 3,
@@ -52,7 +54,8 @@
     "solution": [{
       "input1": 16,
       "input2": 4
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 4,
@@ -72,7 +75,8 @@
     "solution": [{
       "input1": 72,
       "input2": 5
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 5,
@@ -92,7 +96,8 @@
     "solution": [{
       "input1": -72,
       "input2": 0.2
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 6,
@@ -110,7 +115,8 @@
     "points": 25,
     "solution": [{
       "input1": 88
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 7,
@@ -128,7 +134,8 @@
     "points": 5,
     "solution": [{
       "input1": false
-    }]
+    }],
+    "lastLevel": false
   },
   {
     "level": 8,
@@ -156,6 +163,114 @@
       "input2": true,
       "input3": false,
       "input4": true
-    }]
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 9,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "if (5 < 10) {",
+      "\n",
+      "  var x = 2;",
+      "\n",
+      "}",
+      "input1"
+    ],
+    "instructionText": "We’ve created a program just like the above, but with a different condition. What is ‘x’?",
+    "learnText": "Time for a fundamental feature of programming: ‘if’ statements. Let’s say we want to write a program in which we create a variable ‘x’ depending on certain conditions. If 10 is more than 5, we set ‘x’ as 1. Let’s take a look: \n \n if (10 > 5) { \n   var x = 1; \n } \n \n Here’s exactly how the statement works: \n \n First we add an ‘if’ keyword. \n Next the ‘if’ keyword, we add a condition inside two parentheses ‘( )’. \n Then we add a pair of curly braces ‘{ }’. \n If the condition is true, we run the code inside the curly braces. \n \n Here the condition is true: 10 is greater than 5. \n Therefore we run the code inside the curly braces: x = 1",
+    "points": 25,
+    "solution": [{
+      "input1": 2
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 10,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "if (5 < 10) {",
+      "\n",
+      "  var x = 2;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = 3;",
+      "\n",
+      "}",
+      "\n",
+      "input1"
+    ],
+    "instructionText": "What is ‘x’ now? Is the condition inside the first parenthesis still true?",
+    "learnText": "What happens if the condition is false? For instance, what happens if we say: \n \n if (5 > 10) { \n   var x = 1; \n } \n \n In that case, we need to use an ‘if’ / ‘else’ statement: \n \n if (5 > 10) { \n   var x = 1; \n } else {\n   var x = 2; \n } \n \n We add ‘else’ at the very end of our statement. \n \n If the condition is ‘true’, the code inside the first pair of curly braces will run. \n ‘x’ would be 1. \n If the condition is ‘false’, the code inside the second pair of curly braces will run. \n ‘x’ would be 2. \n \n Here the condition is ‘false’, so x is equal to 2.",
+    "points": 20,
+    "solution": [{
+      "input1": 2
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 11,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var y = ‘apple’;",
+      "\n",
+      "if (y === ‘apple’) {",
+      "\n",
+      "  var x = ‘apple’;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = ‘orange’;",
+      "\n",
+      "}",
+      "\n",
+      "input 1"
+    ],
+    "instructionText": "Can you solve the problem now? What is ‘x’?",
+    "learnText": "Let’s do some more practice. We’ve created another ‘if’ condition. Except this program uses knowledge we’ve previously learned, like ‘===’.",
+    "points": 10,
+    "solution": [{
+      "input1": "apple"
+    }],
+    "lastLevel": false
+  },
+  {
+    "level": 12,
+    "chapter": 3,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var y = ‘apple’;",
+      "\n",
+      "if (y === ‘orange’) {",
+      "\n",
+      "  var x = ‘orange’;",
+      "\n",
+      "} else if (y === ‘banana’ {",
+      "\n",
+      "  var x = ‘banana’;",
+      "\n",
+      "} else {",
+      "\n",
+      "  var x = ‘apple’",
+      "\n",
+      "}",
+      "\n",
+      "input"
+    ],
+    "instructionText": "We’ve modified the previous equation to have another condition? What do you think ‘x’ is now?",
+    "learnText": "How tough was that? Hopefully not too tough. :) But what happens if we want to add more than one condition? Then it’s time for the ‘else if’ condition! Let’s take a look at the following: \n \n var y = 10; \n \n if (y < 0) { \n   var x = ‘apple’; \n } else if (y > 5) { \n   var x = ‘orange’; \n} else { \n   var x = ‘banana’; \n } \n \n Here we have the following structure: \n \n if ( /* initial condition */ ) { \n   // do something \n } else if ( /* another condition */ { \n   // do something else \n } else { /* if none of the conditions are true */ \n   // do the third thing \n} \n \n y equals 10. \n If y < 0, x equals ‘apple’. \n If y > 5, x equals ‘orange’. \n Otherwise x equals ‘banana’. \n \n y > 5, so x equals ‘orange.’",
+    "points": 25,
+    "solution": [{
+      "input1": "apple"
+    }],
+    "lastLevel": false
   }
 ]
