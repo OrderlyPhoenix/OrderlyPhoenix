@@ -6,12 +6,11 @@ const gameSchema = new Schema({
   chapter: Number,
   firstImage: String,
   secondImage: String,
-  challengeText: String,
+  challengeText: Array,
   instructionText: String,
   learnText: String,
   points: Number,
-  solution: Array,
-  lastLevel: Boolean
+  solution: Array
 });
 
 module.exports = mongoose.model('Game', gameSchema);

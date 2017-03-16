@@ -6,6 +6,7 @@ import Game from './components/Game.jsx';
 import About from './components/About.jsx';
 import { browserHistory, Router, Route, Redirect } from 'react-router';
 require('./../public/main.css');
+// import 'bootstrap/dist/css/bootstrap.css';
 
 const Main = (
   <Router history={browserHistory}>

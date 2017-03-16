@@ -5,11 +5,19 @@ import Challenge from './Challenge.jsx';
 import Image from './Image.jsx';
 import axios from 'axios';
 require('./../../public/main.css');
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col } from 'reactstrap';
 
 class Game extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      chapter: [
+        {
+          level: 0, chapter: 0, firstImage: '', secondImage: '', challengeText: [], instructionText: '', learnText: '', points: 0, solution: [''], lastLevel: false 
+        }
+      ]
+    };
     this.getChapter = this.getChapter.bind(this);
     this.getChapter();
   }
@@ -31,12 +39,18 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div>
-        <Learn chapter={this.state.chapter}/>
-        <Instruction chapter={this.state.chapter}/>
-        <Challenge chapter={this.state.chapter}/>
-        <Image chapter={this.state.chapter}/>
-      </div>
+      <Container>
+        <Row>
+          <Col md="6"> 
+            <Learn chapter={this.state.chapter} />
+            <Instruction chapter={this.state.chapter} />
+            <Challenge chapter={this.state.chapter} />
+          </Col>
+          <Col md="6">
+            <Image chapter={this.state.chapter} />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
