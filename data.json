@@ -29,9 +29,133 @@
     ],
     "instructionText": "Fill in x",
     "learnText": "Let’s do some more practice! I’ve created a variable x. Can you tell us what x is pointing to?",
-    "points": 10,
+    "points": 25,
     "solution": [{
       "input1": "apples"
+    }]
+  },
+  {
+    "level": 3,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is 6 + 10?",
+      "input1",
+      "\n",
+      "What is 6 - 2?",
+      "input2"
+    ],
+    "instructionText": "How could we solve these math problems?",
+    "learnText": "Did you know that it’s also possible to do math using programming? It works almost the exact same way real-life math does. Here’s a quick look at some problems: \n 1+1 equals 2 \n 1-1 equals 0",
+    "points": 25,
+    "solution": [{
+      "input1": 16,
+      "input2": 4
+    }]
+  },
+  {
+    "level": 4,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is 8 * 9?",
+      "input1",
+      "\n",
+      "What is 5 / 1?",
+      "input2"
+    ],
+    "instructionText": "Here are some more problems, this time with multiplication and division? Can you figure out the answers?",
+    "learnText": "We can also do multiplication and division using programming. Multiplication is done with ‘*’, while division is done with ‘/’. Here’s a quick look at some problems: \n \n 1*1 equals 1 \n 1/1 equals 1",
+    "points": 25,
+    "solution": [{
+      "input1": 72,
+      "input2": 5
+    }]
+  },
+  {
+    "level": 5,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "What is -8*9?",
+      "input1",
+      "\n",
+      "What is 1/5?",
+      "input2"
+    ],
+    "instructionText": "We’ve adjusted the problems to use negative numbers and decimals. How do you think this will change the answer?",
+    "learnText": "Like real math, programming math also uses negatives and decimal numbers (but not fractions!). The rules are the exact same as in real math!",
+    "points": 25,
+    "solution": [{
+      "input1": -72,
+      "input2": 0.2
+    }]
+  },
+  {
+    "level": 6,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "var x = 6+10 – (-8*9);",
+      "\n",
+      "What is x?",
+      "input1"
+    ],
+    "instructionText": "Time to combine variables and math! We’ve created a variable that’s also a mathematical equation. What do you think happens now?",
+    "learnText": "One of the fun things about programming is combining different concepts. It’s common to create variables that are mathematical equations, or even mathematical equations that use variables. For instance: \n \n var x = 1+1; \n \n In this case, x equals ‘2’!",
+    "points": 25,
+    "solution": [{
+      "input1": 88
+    }]
+  },
+  {
+    "level": 7,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "7 < 2;",
+      "\n",
+      "Is this ‘true’ or ‘false’?",
+      "input1"
+    ],
+    "instructionText": "Do you think this is true or false?",
+    "learnText": "Programming also has a concept called booleans. A boolean will either be ‘true’ or ‘false’. But ‘True’ or ‘False’ do not work!",
+    "points": 5,
+    "solution": [{
+      "input1": false
+    }]
+  },
+  {
+    "level": 8,
+    "chapter": 2,
+    "firstImage": "UNKNOWN",
+    "secondImage": "UNKNOWN",
+    "challengeText": [
+      "5 > 9",
+      "input1",
+      "\n",
+      "10 <= 10",
+      "input2",
+      "\n",
+      "3 === 10",
+      "input3",
+      "\n",
+      "3 !=== 10",
+      "input4"
+    ],
+    "instructionText": "Are the following things true or false? Remember not to capitalize!",
+    "learnText": "Finally, just like math, programming has comparative operators like ‘greater than’ or ‘less than’. Here’s a full list: \n \n Greater than: > \n Less than: < \n Greater than or equal to: >= \n Less than or equal to: <= \n Equal to: === \n Not equal to: !==",
+    "points": 25,
+    "solution": [{
+      "input1": false,
+      "input2": true,
+      "input3": false,
+      "input4": true
     }]
   }
 ]
