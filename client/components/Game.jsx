@@ -21,6 +21,7 @@ class Game extends React.Component {
       showNextLevel: false
     };
     this.getChapter = this.getChapter.bind(this);
+    this.getPreviousChapter = this.getPreviousChapter.bind(this);
     this.changeImage = this.changeImage.bind(this);
     if (Cookies.get('Level') === undefined) {
       Cookies.set('Level', '1', { expires: 1000 });
@@ -35,6 +36,10 @@ class Game extends React.Component {
 
   setLevel() {
     Cookies.set('Level', this.state.chapter[0].level + 1, { expires: 1000 });
+  }
+
+  setPreviousLevel(amount) {
+    Cookies.set('Level', this.state.chapter[0].level + amount, { expires: 1000 });
   }
 
   getChapter() {
@@ -54,6 +59,11 @@ class Game extends React.Component {
     .catch(err => {
       console.error('Error retrieving chapters: ', err);
     });
+  }
+
+  getPreviousChapter() {
+    this.setPreviousLevel(-1);
+    this.getChapter();
   }
 
   changeImage() {
