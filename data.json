@@ -152,7 +152,7 @@
       "3 === 10",
       "input3",
       "\n",
-      "3 !=== 10",
+      "3 !== 10",
       "input4"
     ],
     "instructionText": "Are the following things true or false? Remember not to capitalize!",
