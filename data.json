@@ -8,11 +8,11 @@
       "input1",
       "apples"
     ],
-    "instructionText": "Fill in the text below so that the box is labeled",
+    "instructionText": "Fill in the box below.",
     "learnText":
-    "To start coding, we need a way to 'save' the values from our coding. We do this by defining a variable with a name that will be tied to that value just as the value is tied to the variable name. Once you create (or declare) a variable as having a particular name, you can then call up that value by typing the variable name. The way to declare a variable is: var bananas;",
+    "In programming, a 'variable' is a way to save things we've created. We save these things by creating a variable with a name. Once you create (or declare) a variable with a name, you can then call that value by typing the variable name. The way to declare a variable, if we wanted to create a variable called 'bananas,' is: var bananas;",
     "points": 25,
-    "hint": "Remember, we need to make an apple. For example: var banana. So what we need to is ___ apples",
+    "hint": "Remember, we need to make an apple using the 'var' keyword. So what we need to do is: ___ apples.",
     "solution": [{
       "input1": "var"
     }],
@@ -29,10 +29,10 @@
       "What is x?",
       "input1"
     ],
-    "instructionText": "Fill in x",
-    "learnText": "Let’s do some more practice! I’ve created a variable x. Can you tell us what x is pointing to?",
+    "instructionText": "Fill in the box below.",
+    "learnText": "Let’s do some more practice! I’ve created a variable x. Can you tell me what x is pointing to?",
     "points": 25,
-    "hint": "We can assign variables to have values. For Example: var y = peaches; If I logged var y, I would get peaches. Becasue 'y' equals peaches",
+    "hint": "We can assign variables to have values. For example: var y = peaches;\nIf I logged 'var y,' it would be 'peaches,' since 'y' equals 'peaches'",
     "solution": [{
       "input1": "apples"
     }],
@@ -50,10 +50,10 @@
       "What is 6 - 2?",
       "input2"
     ],
-    "instructionText": "How could we solve these math problems?",
-    "learnText": "Did you know that it’s also possible to do math using programming? It works almost the exact same way real-life math does. Here’s a quick look at some problems: \n \n 1+1 equals 2 \n \n 1-1 equals 0",
+    "instructionText": "Fill in the boxes below.",
+    "learnText": "Did you know that it’s possible to do math using programming? It works almost the exact same way regular math does. To add, you use '+', and to subtract, you use '-'. Here’s a quick look at some problems: \n \n 1 + 1 equals 2 \n \n 1 - 1 equals 0",
     "points": 25,
-    "hint": "Use simple addition and subtraction to solve these math problems. 6 + 10 = ?. 6 - 2 = ?",
+    "hint": "Use simple addition and subtraction to solve these math problems. 6 + 10 = ? 6 - 2 = ?",
     "solution": [{
       "input1": "16",
       "input2": "4"
@@ -72,10 +72,10 @@
       "What is 5 / 1?",
       "input2"
     ],
-    "instructionText": "Here are some more problems, this time with multiplication and division? Can you figure out the answers?",
-    "learnText": "We can also do multiplication and division using programming. Multiplication is done with ‘*’, while division is done with ‘/’. Here’s a quick look at some problems: \n \n 1*1 equals 1 \n \n 1/1 equals 1",
+    "instructionText": "Here are some more problems, this time with multiplication and division! Can you figure out the answers? Fill in the box below!",
+    "learnText": "We can also do multiplication and division using programming. Multiplication is done with ‘*’, and division is done with ‘/’. Here’s a quick look at some problems: \n \n 1 * 2 equals 2 \n \n 4 / 2 equals 2",
     "points": 25,
-    "hint": "Multiplication is like addition. In this case, 2 * 3 is the same as 2 + 2 + 2. 5 divided by 1 is like you having 5 pieces of candy an only yourself to share with.",
+    "hint": "Think of multiplication in terms of addition. In this case, 2 * 3 is the same as 2 + 2 + 2. For division, think of the following example: 5/1 is like having 5 pieces of candy and only having to share with yourself.",
     "solution": [{
       "input1": "6",
       "input2": "5"
@@ -94,10 +94,10 @@
       "What is 1/2?",
       "input2"
     ],
-    "instructionText": "We’ve adjusted the problems to use negative numbers and decimals. How do you think this will change the answer?",
-    "learnText": "Like real math, programming math also uses negatives and decimal numbers (but not fractions!). The rules are the exact same as in real math!",
+    "instructionText": "Let's try negative numbers and decimals! How do you think this will change the answer?",
+    "learnText": "Like real math, programming math also uses negatives and decimal numbers. The rules are the exact same as in regular math!",
     "points": 25,
-    "hint": "When multiplying a negative number by a positive number, the result is the same just with a '-' in front of the number. Decimals are like division. If we divide 1 by 2, it turns into a decimal being 0.? Think in terms of money. What's half of $1? ",
+    "hint": "When multiplying a negative number by a positive number, the result is the same, just with a '-' in front of the number to show that it is negative. Decimals are fractions that have been converted to decimal form. If we divide 1 by 2, the fraction 1/2 will be converted into a decimal. Think in terms of money: what's half of $1?",
     "solution": [{
       "input1": "-6",
       "input2": "0.5"
@@ -110,42 +110,22 @@
     "firstImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_6_img_1_resize700.png",
     "secondImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_6_img_2_resize700.png",
     "challengeText": [
-      "var x = 6 + 10 – (-8 * 9);",
+      "var x = 6 + 10 – (2 * 3);",
       "\n",
       "What is x?",
       "input1"
     ],
     "instructionText": "Time to combine variables and math! We’ve created a variable that’s also a mathematical equation. What do you think happens now?",
-    "learnText": "One of the fun things about programming is combining different concepts. It’s common to create variables that are mathematical equations, or even mathematical equations that use variables. For instance: \n \n var x = 1+1; \n \n In this case, x equals ‘2’!",
+    "learnText": "One of the fun things about programming is combining different ideas. You can create variables that are mathematical equations, or even mathematical equations that use variables. For instance: \n \n var x = 1 + 1; \n \n In this case, x equals ‘2’!",
     "points": 25,
-    "hint": "PEMDAS or Parentheses, Exponents, Multiply, Divide, Add, Subtract are the order of operations. Do the math inside the parentheses first. Then do the math from left to right. Also remeber the subrtracting a negative number is the same as addition.",
+    "hint": "PEMDAS or Parentheses, Exponents, Multiply, Divide, Add, Subtract are the order of operations. Do the math inside the parentheses first. Then do the math from left to right!",
     "solution": [{
-      "input1": "88"
+      "input1": "10"
     }],
     "lastLevel": false
   },
   {
     "level": 7,
-    "chapter": 2,
-    "firstImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_7_img_1_resize700.png",
-    "secondImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_7_img_2_resize700.png",
-    "challengeText": [
-      "7 < 2;",
-      "\n",
-      "Is this ‘true’ or ‘false’?",
-      "input1"
-    ],
-    "instructionText": "Do you think this is true or false?",
-    "learnText": "Programming also has a concept called booleans. A boolean will either be ‘true’ or ‘false’. But ‘True’ or ‘False’ do not work!",
-    "points": 25,
-    "hint": "7 < 2 is the same as saying is 7 smaller than 2? If you ask yourself that question, is it true or false?",
-    "solution": [{
-      "input1": "false"
-    }],
-    "lastLevel": false
-  },
-  {
-    "level": 8,
     "chapter": 2,
     "firstImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_8_img_1_resize700.png",
     "secondImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_8_img_2_resize700.png",
@@ -162,15 +142,35 @@
       "3 !== 10",
       "input4"
     ],
-    "instructionText": "Are the following things true or false? Remember not to capitalize!",
-    "learnText": "Finally, just like math, programming has comparative operators like ‘greater than’ or ‘less than’. Here’s a full list: \n \n Greater than: > \n Less than: < \n Greater than or equal to: >= \n Less than or equal to: <= \n Equal to: === \n Not equal to: !==",
+    "instructionText": "Are the following things true or false?",
+    "learnText": "Again, just like in regular like math, programming has a way to compare things. This way to compare is called 'operators.' Here’s a full list of these operators: \n \n Greater than: > \n Less than: < \n Greater than or equal to: >= \n Less than or equal to: <= \n Equal to: === \n Not equal to: !==",
     "points": 25,
-    "hint": "Ask yourself the questions out loud. Do they true or false? Is 5 greater than 9? Is 10 less than or equal to 10? Does 3 exactly equal 10? Is 3 'not' equal to 10?",
+    "hint": "Ask yourself the questions out loud. Do they sound true or false? Is 5 greater than 9? Is 10 less than or equal to 10? Does 3 equal 10? Is 3 not equal to 10?",
     "solution": [{
       "input1": "false",
       "input2": "true",
       "input3": "false",
       "input4": "true"
+    }],
+    "lastLevel": false
+  },
+    {
+    "level": 8,
+    "chapter": 2,
+    "firstImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_7_img_1_resize700.png",
+    "secondImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_7_img_2_resize700.png",
+    "challengeText": [
+      "7 < 2;",
+      "\n",
+      "Is this ‘true’ or ‘false’?",
+      "input1"
+    ],
+    "instructionText": "Do you think this is true or false?",
+    "learnText": "Programming has a concept called 'booleans.' A boolean is always either 'true' or 'false.' This is a way to indicate if something is true or not!",
+    "points": 25,
+    "hint": "'7 < 2' is the same as saying 'is 7 smaller than 2?' If you ask yourself that question out loud, is it true or false?",
+    "solution": [{
+      "input1": "false"
     }],
     "lastLevel": false
   },
@@ -187,10 +187,10 @@
       "}",
       "input1"
     ],
-    "instructionText": "We’ve created a program just like the above, but with a different condition. What is ‘x’?",
-    "learnText": "Time for a fundamental feature of programming: ‘if’ statements. Let’s say we want to write a program in which we create a variable ‘x’ depending on certain conditions. If 10 is more than 5, we set ‘x’ as 1. Let’s take a look: \n \n if (10 > 5) { \n   var x = 1; \n } \n \n Here’s exactly how the statement works: \n \n First we add an ‘if’ keyword. \n Next the ‘if’ keyword, we add a condition inside two parentheses ‘( )’. \n Then we add a pair of curly braces ‘{ }’. \n If the condition is true, we run the code inside the curly braces. \n \n Here the condition is true: 10 is greater than 5. \n Therefore we run the code inside the curly braces: x = 1",
+    "instructionText": "We’ve created a program just like the above, but with a different condition. What is ‘x’? Fill in the box below.",
+    "learnText": "Let's learn about another feature of programming: ‘if’ statements! Here's a simple example:\n\nif (you==='tired') {\n'sleep'\n}\n\nIn the above example, what we're saying is: if you're tired, you sleep! This way to say to do a thing depending on a condition you set is called an 'if statement.' Here's another example: let’s say we want to write a program that does one thing if 10 is more than 5. If 10 is more than 5, we set ‘x’ as 1. Let’s take a look: \n \n if (10 > 5) { \n   var x = 1; \n } \n \n Here’s exactly how the statement works: \n \n First we add an ‘if’ keyword. \n Next to the ‘if’ keyword, we add a condition inside two parentheses ‘()’. \n Then we add a pair of curly braces ‘{ }’. \n If the condition is true, we run the code inside the curly braces. \n \n Here the condition is true: 10 is greater than 5. \n So when we run the code inside the curly braces, x = 1!",
     "points": 25,
-    "hint": "If statements are questions. If you ask yourself, if 5 is less than 10, which is true, then do the thing underneath. Which in this case sets var x to ?",
+    "hint": "If statements are questions. If you ask yourself, if 5 is less than 10 (which is true), then do the thing inside the curly braces. Is the condition in the if statement true?",
     "solution": [{
       "input1": "2"
     }],
@@ -214,10 +214,10 @@
       "\n",
       "input1"
     ],
-    "instructionText": "What is ‘x’ now? Is the condition inside the first parenthesis still true?",
-    "learnText": "What happens if the condition is false? For instance, what happens if we say: \n \n if (5 > 10) { \n   var x = 1; \n } \n \n In that case, we need to use an ‘if’ / ‘else’ statement: \n \n if (5 > 10) { \n   var x = 1; \n } else {\n   var x = 2; \n } \n \n We add ‘else’ at the very end of our statement. \n \n If the condition is ‘true’, the code inside the first pair of curly braces will run. \n ‘x’ would be 1. \n If the condition is ‘false’, the code inside the second pair of curly braces will run. \n ‘x’ would be 2. \n \n Here the condition is ‘false’, so x is equal to 2.",
+    "instructionText": "What is ‘x’ now? Is the condition inside the first parenthesis still true? Fill in the box below!",
+    "learnText": "What happens if the condition is false? For instance, what happens if we say: \n \n if (5 > 10) { \n   var x = 1; \n } \n \n In that case, we need to use an ‘if / else’ statement: \n \n if (5 > 10) { \n   var x = 1; \n } else {\n   var x = 2; \n } \n \n We add ‘else’ at the very end of our statement. \n \n If the condition is ‘true’, the code inside the first pair of curly braces will run. \n ‘x’ would be 1. \n If the condition is ‘false’, the code inside the second pair of curly braces will run. \n ‘x’ would be 2. \n \n Here the condition is ‘false’, so x is equal to 2.",
     "points": 25,
-    "hint": "Keep asking yourself the questions. Start from the top and work your way down. If 5 is less than 10, which is true, do the thing underneath, 'else' do this other thing.",
+    "hint": "Keep asking yourself the questions out loud. Start from the top and work your way down. If 5 is less than 10 (which is true), then do the thing underneath, 'else' do this other thing!",
     "solution": [{
       "input1": "2"
     }],
@@ -243,10 +243,10 @@
       "\n",
       "input1"
     ],
-    "instructionText": "Can you solve the problem now? What is ‘x’?",
-    "learnText": "Let’s do some more practice. We’ve created another ‘if’ condition. Except this program uses knowledge we’ve previously learned, like ‘===’.",
+    "instructionText": "Can you solve the problem now? What is ‘x’? Fill in the box below!",
+    "learnText": "Let’s do some more practice. We’ve created another ‘if’ condition. Remember that we previously learned operators like ‘===’!",
     "points": 25,
-    "hint": "You've got this! Just follow the code. We set var y to apple first. Then we ask ourselves, does y exactly equal apple? Yes it does. Then we assign var x to apple. So what is 'x' at this point?",
+    "hint": "You've got this! Just follow the code. We set 'var y' equal to 'apple' first. Then we ask ourselves, does 'y' equal apple? Yes it does! Then we assign 'var x' equal to 'apple.' So what is 'x' equal to now?",
     "solution": [{
       "input1": "apple"
     }],
@@ -276,10 +276,10 @@
       "\n",
       "input1"
     ],
-    "instructionText": "We’ve modified the previous equation to have another condition? What do you think ‘x’ is now?",
-    "learnText": "How tough was that? Hopefully not too tough. :) But what happens if we want to add more than one condition? Then it’s time for the ‘else if’ condition! Let’s take a look at the following: \n \n var y = 10; \n \n if (y < 0) { \n   var x = ‘apple’; \n } else if (y > 5) { \n   var x = ‘orange’; \n} else { \n   var x = ‘banana’; \n } \n \n Here we have the following structure: \n \n if ( /* initial condition */ ) { \n   // do something \n } else if ( /* another condition */ { \n   // do something else \n } else { /* if none of the conditions are true */ \n   // do the third thing \n} \n \n y equals 10. \n If y < 0, x equals ‘apple’. \n If y > 5, x equals ‘orange’. \n Otherwise x equals ‘banana’. \n \n y > 5, so x equals ‘orange.’",
+    "instructionText": "Let's add another condition to our if/else statement! What do you think ‘x’ is now? Fill in the box below.",
+    "learnText": "What happens if we want to add more than one condition to an if/else statement? Then it’s time for the ‘else if’ condition! Let’s take a look at the following: \n \n var y = 10; \n \n if (y < 0) { \n   var x = ‘apple’; \n } else if (y > 5) { \n   var x = ‘orange’; \n} else { \n   var x = ‘banana’; \n } \n \n Here we have the following structure: \n \n if ( /* initial condition */ ) { \n   // do something \n } else if ( /* another condition */ { \n   // do something else \n } else { /* if none of the conditions are true */ \n   // do the third thing \n} \n \n y equals 10. \n If y < 0, x equals 'apple.' \n If y > 5, x equals 'orange.' \n Otherwise x equals 'banana.' \n \n y > 5, so x equals 'orange.'",
     "points": 25,
-    "hint": "Now remember, 'y' is declared to be 'apple' and we then check to see if 'y' is equal to 'orange'. If 'y' is not equal to 'orange' then we check to see if 'y' is equal to 'banana'. If 'y' is not equal to 'banana', what do we do?",
+    "hint": "Now remember, 'y' is declared to be 'apple,' and we then check to see if 'y' is equal to 'orange.' If 'y' is not equal to 'orange,' then we check to see if 'y' is equal to 'banana.' If 'y' is not equal to 'banana,' what do we do?",
     "solution": [{
       "input1": "apple"
     }],
@@ -299,12 +299,12 @@
       "\n",
       "}",
       "\n",
-      "// At the end, x equals 3.",
+      "At the end, x equals 3.",
       "\n",
       "input1"
       ],
-    "instructionText":  "Submit ‘true’ to continue!",
-    "learnText": "For our final chapter, we’re going to introduction ‘for’ loops. This lesson just shows you the final structure of a ‘for’ loop.",
+    "instructionText":  "Enter ‘true’ in the box below to continue!",
+    "learnText": "For our final chapter, we’re going to introduce a concept called 'for loops.' This lesson just shows you the final structure of a 'for loop.'",
     "points":  25,
     "hint": "Just enter 'true' to see what happens!",
     "solution": [{
@@ -326,14 +326,14 @@
       "\n",
       "}",
       "\n",
-      "// At the end, x equals 3.",
+      "At the end, x equals 3.",
       "\n",
       "input1"
     ],
-    "instructionText":  "At the very beginning of the loop, what is i?",
-    "learnText": "Let’s focus on how a ‘for’ loop starts. Every ‘for’ loops uses a variable to count. The variable can be called anything, but here we choose to call it ‘i’. \n \n The first part of the loop tells us to start with a value of 1 (‘var i = 1’).",
+    "instructionText":  "At the very beginning of the loop, what is i? Fill in the box below!",
+    "learnText": "Let’s focus on how a 'for loop' starts. Every 'for loop' uses a variable to keep track of the count. The variable can be named anything, but here we choose to call it 'i.' \n \n The first part of the loop tells us to start with a value of 1: 'var i = 1'.",
     "points":  25,
-    "hint": "What is 'i' when we declared it(var)? We start 'i' off with an initial value that is defined when we declare 'i'",
+    "hint": "What is 'i' when we declared it? We start 'i' with a first value that is defined when we declare 'i.'",
     "solution": [{
         "input1": "1"
       }],
@@ -347,20 +347,20 @@
     "challengeText": [
       "var x = 0;",
       "\n",
-      "for (var i = 1; i < _; i++) {",
+      "for (var i = 1; i < ___; i++) {",
       "\n",
       "x++;",
       "\n",
       "}",
       "\n",
-      "// At the end, x equals 3.",
+      "At the end, x equals 3.",
       "\n",
       "input1"
     ],
-    "instructionText": "If we want the loop to end when x equals three, how should we fill in the blank space?",
-    "learnText": "How do we know when a ‘for’ loop ends? Well, let’s take a look at this example: \n \n var x = 1; \n for (var i = 1; i < 10; i++) { \n   x++; \n } \n \n Here, this loop will keep on running until i = 9 (that is, while i < 10). \n When i equals 10, i will not be less than 10. \n So the loop will no longer run.",
+    "instructionText": "If we want the loop to end when 'x' equals three, how should we fill in the blank space? Fill in the box below!",
+    "learnText": "How do we know when a 'for loop' ends? Well, let’s take a look at this example: \n \n var x = 1; \n for (var i = 1; i < 10; i++) { \n   x++; \n } \n \n Here, this loop will keep going until 'i' is equal to 9 (that is, while i < 10). \n When 'i' equals 10, 'i' will not be less than 10. \n So the loop will no longer run.",
     "points":  25,
-    "hint": "We started off declaring 'i' to equal 1. Then we decide the value of 'i' at which to stop the loop. If 'x++'(which adds 1 to x everytime it is run) needs to run three times, 'i' needs to stop when it is equal to...",
+    "hint": "We started off setting 'i' to equal 1. Then we set the value of 'i' at which to stop the loop. If 'x++' (which adds 1 to x every time the loop is run) needs to run three times, 'i' needs to stop when it is equal to ___ ?",
     "solution": [{
         "input1":"4"
       }],
@@ -374,48 +374,52 @@
     "challengeText": [
       "var x = 0;",
       "\n",
-      "for (var i = 1; i < 4; i__) {",
+      "for (var i = 1; i < 4; i ___) {",
       "\n",
       "x__;",
       "\n",
       "}",
       "\n",
-      "// At the end, x equals 3.",
+      "At the end, x equals 3.",
       "\n",
       "input1",
       "\n"
     ],
-    "instructionText": "Fill in the blanks with the appropriate symbols.",
-    "learnText": "Let’s talk about the ‘++’. ‘++’ means that we’re going to increase the value of something by one. \n \n For instance, let’s say we have: \n \n var x = 1; \n x++; \n \n Now x is equal to two. \n \n  By the way, ‘—-‘ does the opposite of ‘++’.",
+    "instructionText": "Fill in the blanks with the correct symbols!",
+    "learnText": "Let’s talk about the '++.' '++' means that we’re going to increase the value of something by one. \n \n For instance, let’s say we have: \n \n var x = 1; \n x++; \n \n Now 'x' is equal to two. \n \n'++' is the same as '+ 1'!",
     "points": 25,
-    "hint": "We want to add 1 to 'x' and 'i' every loop. Remember that '++' means to add 1 and '--' means to subtract 1",
+    "hint": "We want to add 1 to 'x' and 'i' every time we go through the loop. Remember that '++' means to add 1!",
     "solution": [{
       "input1": "++"
     }],
     "lastLevel": false
   },
-  {
+    {
     "level": 17,
     "chapter": 4,
-    "firstImage": "UNKNOWN",
-    "secondImage": "UNKNOWN",
+    "firstImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_16_img_1_resize700.png",
+    "secondImage": "https://s3-us-west-1.amazonaws.com/codrbucket/lvl_16_img_2_resize700.png",
     "challengeText": [
       "var x = 0;",
       "\n",
       "for (var i = 1; i < 4; i++) {",
       "\n",
-      "x++;",
+      "x__;",
       "\n",
       "}",
       "\n",
-      "input1"
+      "At the end, x equals 3.",
+      "\n",
+      "input1",
+      "\n"
     ],
-    "instructionText":  "What is x at the end?",
-    "learnText": "Let’s wrap things up by going step-through-step through this loop. Here’s what happens... \n \n 1) We start with i = 1. \n 2) Is i less than 4? \n 3) Yes it is. Therefore we increase x by one. x = 1 \n 4) Now we go back to the loop between the parenthesis. We increase i by one. \n 5) i = 2 \n 6) Is i less than 4? \n 7) Yes it is. Therefore we increase x by one. x = 2 \n 8) Now we go back to the loop between the parenthesis. We increase i by one. \n 9) i = 3 \n 10) Is i less than 4? \n 11) Yes it is. Therefore we increase x by one. x = 3 \n 12) Now we go back to the loop between the parenthesis. We increase i by one. \n 13) i = 4 \n 14) Is i less than 4? \n 15) NO. \n 16) We’re done. We break out of the loop. x = 3",
-    "points":  25,
+    "instructionText": "Fill in the blank with the correct symbol so that 'x' equals 3 at the end of the for loop!",
+    "learnText": "Let’s talk about the '++.' '++' means that we’re going to increase the value of something by one. \n \n For instance, let’s say we have: \n \n var x = 1; \n x++; \n \n Now 'x' is equal to two. \n \n'++' is the same as '+ 1'!",
+    "points": 25,
+    "hint": "We want to add 1 to 'x' and 'i' every time we go through the loop. Remember that '++' means to add 1!",
     "solution": [{
-        "input1":3
-      }],
+      "input1": "++"
+    }],
     "lastLevel": true
   }
 ]

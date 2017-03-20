@@ -10,18 +10,19 @@ module.exports = function(grunt) {
     },
 
     shell: {
-      multiple: {
-        command: [
-          'mongod',
-          'npm install',
-          'npm run seed',
-          'npm run build:watch',
-          'grunt nodemon'
-        ].join('&')
+        multiple: {
+          command: [
+            'mongod',
+            'npm install',
+            'npm run seed',
+            'npm run build:watch',
+            'grunt nodemon'
+          ].join('&')
+        }
       }
-    }
-  });
 
+
+  });
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
 

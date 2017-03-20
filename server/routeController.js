@@ -1,7 +1,7 @@
 const Game = require('./db/Game/Game.js');
 const db = require('./db/index.js');
 
-const getChapter = function(req, res) {
+const getLevel = function(req, res) {
   Game.find({level: req.query.level})
   .then(function(data) {
     res.send(data);
@@ -12,4 +12,4 @@ const getChapter = function(req, res) {
   });
 };
 
-module.exports.getChapter = getChapter;
+module.exports.getLevel = getLevel;

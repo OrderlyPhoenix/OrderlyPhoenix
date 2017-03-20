@@ -18,11 +18,11 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
-  CodingforKids
+  Codr
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-  Teaching Javascript fundamentals to kids(ages 6-12).
+  Teaching programming fundamentals to kids (ages 6-12).
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
@@ -34,20 +34,20 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
-  avatars.
+  Programming concepts are broken down into fun and easy to understand challenges.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
-  "yah its alright"
+  "Codr makes it easy for kids to get started! It's never too early."
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
-  "just like that"
+  "Get started on codrfy.com! No need to login or create an account."
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-  "it was fun"
+  "Codr made it fun and easy to learn how to code!"
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
-  Log in now™
+  Start now on Codrfy.com™

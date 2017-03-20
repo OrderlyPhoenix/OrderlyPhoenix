@@ -8,6 +8,7 @@ require('./../../public/main.css');
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import Cookies from 'js-cookie';
+import { Nav, NavItem, NavDropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 
 class Game extends React.Component {
   constructor(props) {
@@ -18,9 +19,12 @@ class Game extends React.Component {
           level: 0, chapter: 0, firstImage: '', secondImage: '', challengeText: [], instructionText: '', learnText: '', points: 0, solution: [''] 
         }
       ],
-      showNextLevel: false
+      showNextLevel: false,
+      showHintButton: false,
+      showHint: false
+      dropdownOpen: false
     };
-    this.getChapter = this.getChapter.bind(this);
+    this.getLevel = this.getLevel.bind(this);
     this.changeImage = this.changeImage.bind(this);
     if (Cookies.get('Level') === undefined) {
       Cookies.set('Level', '1', { expires: 1000 });
@@ -30,16 +34,29 @@ class Game extends React.Component {
     this.getPreviousLevel = this.getPreviousLevel.bind(this);
     this.showNextLevelButton = this.showNextLevelButton.bind(this);
     this.hideNextLevelButton = this.hideNextLevelButton.bind(this);
+    this.showHintButton = this.showHintButton.bind(this);
+    this.showHint = this.showHint.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.getSpecificChapter = this.getSpecificChapter.bind(this);
     this.getChapter();
+    this.numbers = [];
+    this.createNums();
+    this.getLevel();
+  }
+
+  createNums() {
+    for(var i = 0; i < Cookies.get('Level'); i++){
+      this.numbers.push(i+1);
+    }
   }
 
   setLevel() {
     Cookies.set('Level', this.state.chapter[0].level + 1, { expires: 1000 });
   }
 
-  getChapter() {
+  getLevel() {
     axios({
-      url: '/api/chapter',
+      url: '/api/level',
       method: 'get', 
       params: {
         level: Cookies.get('Level')
@@ -52,7 +69,7 @@ class Game extends React.Component {
       });
     })
     .catch(err => {
-      console.error('Error retrieving chapters: ', err);
+      console.error('Error retrieving level: ', err);
     });
   }
 
@@ -64,12 +81,16 @@ class Game extends React.Component {
 
   startOver() {
     Cookies.set('Level', '1', { expires: 1000 });
-    this.getChapter();
+    this.getLevel();
   }
 
   getPreviousLevel() {
     Cookies.set('Level', this.state.chapter[0].level - 1, { expires: 1000 });
-    this.getChapter();
+    this.setState({
+      showHintButton: false,
+      showHint: false
+    });
+    this.getLevel();
   }
 
   showNextLevelButton() {
@@ -79,9 +100,48 @@ class Game extends React.Component {
   }
 
   hideNextLevelButton() {
-    this.getChapter();
+    this.getLevel();
     this.setState({
-      showNextLevel: false
+      showNextLevel: false,
+      showHintButton: false,
+      showHint: false
+    });
+  }
+
+  showHintButton() {
+    this.setState({
+      showHintButton: true
+    });
+  }
+
+  showHint() {
+    this.setState({
+      showHint: true
+    });
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    })
+  }
+
+  getSpecificChapter(level) {
+    axios({
+      url: '/api/level',
+      method: 'get', 
+      params: {
+        level: level
+      }
+    })
+    .then(res => {
+      this.setState({
+        chapter: res.data,
+        image: res.data[0].firstImage
+      })
+    })
+    .catch(err => {
+      console.error('Error retrieving chapters: ', err);
     });
   }
 
@@ -102,7 +162,9 @@ class Game extends React.Component {
           <Col md="6"> 
             <Learn chapter={this.state.chapter} />
             <Instruction chapter={this.state.chapter} />
-            <Challenge chapter={this.state.chapter} changeImage={this.changeImage} setLevel={this.setLevel} showNextLevelButton = {this.showNextLevelButton} />
+            <Challenge chapter={this.state.chapter} changeImage={this.changeImage} setLevel={this.setLevel} showNextLevelButton = {this.showNextLevelButton} showHintButton={this.showHintButton} />
+            {this.state.showHintButton ? <button onClick={this.showHint}>Hint</button> : null}
+            {this.state.showHint ? <div>{this.state.chapter[0].hint}</div> : null}
           </Col>
           <Col md="6">
             <h3>Level {this.state.chapter[0].level}</h3>

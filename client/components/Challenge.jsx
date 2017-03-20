@@ -22,9 +22,9 @@ class Challenge extends React.Component {
     if (item.includes('input')) {
       return <span> <input placeholder="Fill me in" name={item} onChange={this.updateChallenge} /> </span>;
     } else if (item === '\n') {
-      return <br />
+      return <br />;
     } else if (item.includes('  ')) {
-      return <span>&nbsp;{item}</span>
+      return <span>&nbsp;{item}</span>;
     } else {
       return item;
     }
@@ -56,7 +56,7 @@ class Challenge extends React.Component {
       this.props.setLevel();
       this.props.showNextLevelButton();
     } else {
-      alert('Please try again!');
+      this.props.showHintButton();
     }
   }
 
