@@ -67,12 +67,15 @@ class Challenge extends React.Component {
 
     return (
       <div>
-        <strong><p>Challenge Text</p></strong>
-        <form onSubmit={this.submitAns} ref="form">
-          {this.props.chapter[0].challengeText.map(item => this.renderInput(item))}
-          <br/><br/>
-          <input type="submit"></input>
-        </form>
+        <div id="challenge">
+          <strong><p className="header">Challenge Text</p></strong>
+          <form onSubmit={this.submitAns} ref="form">
+            <div className="content">
+              {this.props.chapter[0].challengeText.map(item => this.renderInput(item))}
+            </div>
+            <input type="submit" className="submit button"></input>
+          </form>
+        </div>
       </div>
     );
   }

@@ -1,3 +1,145 @@
-body {
-  background-color: cadetblue;
+#main {
+  margin: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+td {
+  margin: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#title {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 60px;
+}
+
+#challenge, #instruction, #learn, #hint {
+  border: 1px solid grey;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#challenge, #instruction, #learn {
+  font-size: 24px;
+}
+
+#body {
+  background-color: #D1F0E8;
+}
+
+
+.right {
+  text-align: right;
+}
+
+.mainImage {
+  display: block;
+  margin: 30px auto;
+  border: 5px solid white;
+}
+
+.rightHalf {
+  background-color: #96DBCF;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.rightHalf, .leftHalf {
+  padding: 0 10px;
+}
+
+.content {
+  padding: 5px 10px;
+}
+
+.header {
+  background-color: #84C7B8;
+  text-align: center;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.nav, .navItem {
+  background-color: #84C7B8;
+  color: black;
+}
+
+.about {
+  margin-left: 42%;
+  color:black;
+}
+
+.navItem {
+  color:black;
+}
+
+.navItem:hover {
+  background-color: #96DBCF;
+}
+
+.round {
+  margin-left: -10%;
+  margin-top: -8%;
+  width: 120%;
+}
+
+.portrait {
+  border-radius: 50%;
+  border: 10px solid #84C7B8;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: 17em;
+  width: 17em;
+}
+
+.submit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #84C7B8;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.button:hover {
+  cursor: pointer;
+  cursor: hand;
+  color: #6E6E6E;
+}
+
+#hint {
+  margin-bottom: 10px;
+}
+
+.hint {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.left {
+  text-align: left;
+}
+
+.about:hover {
+  background-color: #96DBCF;
+}
+
+.levelHeader {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+#navbar {
+  display: inline;
 }

@@ -4,11 +4,11 @@ import Instruction from './Instruction.jsx';
 import Challenge from './Challenge.jsx';
 import Image from './Image.jsx';
 import axios from 'axios';
-require('./../../public/main.css');
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import Cookies from 'js-cookie';
-import { Nav, NavItem, NavDropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavDropdown, Navbar, NavbarToggler, NavbarBrand, Collapse, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+require('./../../public/main.css');
 
 class Game extends React.Component {
   constructor(props) {
@@ -21,9 +21,11 @@ class Game extends React.Component {
       ],
       showNextLevel: false,
       showHintButton: false,
-      showHint: false
-      dropdownOpen: false
+      showHint: false,
+      dropdownOpen: false,
+      numbers: []
     };
+
     this.getLevel = this.getLevel.bind(this);
     this.changeImage = this.changeImage.bind(this);
     if (Cookies.get('Level') === undefined) {
@@ -37,17 +39,9 @@ class Game extends React.Component {
     this.showHintButton = this.showHintButton.bind(this);
     this.showHint = this.showHint.bind(this);
     this.toggle = this.toggle.bind(this);
-    this.getSpecificChapter = this.getSpecificChapter.bind(this);
-    this.getChapter();
-    this.numbers = [];
-    this.createNums();
+    this.getSpecificLevel = this.getSpecificLevel.bind(this);
     this.getLevel();
-  }
-
-  createNums() {
-    for(var i = 0; i < Cookies.get('Level'); i++){
-      this.numbers.push(i+1);
-    }
+    this.createNums();
   }
 
   setLevel() {
@@ -106,6 +100,7 @@ class Game extends React.Component {
       showHintButton: false,
       showHint: false
     });
+    this.createNums();
   }
 
   showHintButton() {
@@ -120,13 +115,23 @@ class Game extends React.Component {
     });
   }
 
+  createNums() {
+    let temp = [];
+    for (var i = 0; i < Cookies.get('Level'); i++) {
+      temp.push(i + 1);
+    }
+    this.setState({
+      numbers: temp
+    });
+  }
+
   toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
-    })
+    });
   }
 
-  getSpecificChapter(level) {
+  getSpecificLevel(level) {
     axios({
       url: '/api/level',
       method: 'get', 
@@ -136,9 +141,8 @@ class Game extends React.Component {
     })
     .then(res => {
       this.setState({
-        chapter: res.data,
-        image: res.data[0].firstImage
-      })
+        chapter: res.data
+      });
     })
     .catch(err => {
       console.error('Error retrieving chapters: ', err);
@@ -152,29 +156,84 @@ class Game extends React.Component {
           You did it!
           <br /> <br />
           <button onClick={this.startOver}>Play Again</button>
-          <img src="https://i.ytimg.com/vi/Jx8zYrMtdCI/maxresdefault.jpg" />
+          <img src="https://s3-us-west-1.amazonaws.com/codrbucket/lvl_finale_resize1000.png" />
         </div>
       );
     }
     return (
-      <Container>
-        <Row>
-          <Col md="6"> 
-            <Learn chapter={this.state.chapter} />
-            <Instruction chapter={this.state.chapter} />
-            <Challenge chapter={this.state.chapter} changeImage={this.changeImage} setLevel={this.setLevel} showNextLevelButton = {this.showNextLevelButton} showHintButton={this.showHintButton} />
-            {this.state.showHintButton ? <button onClick={this.showHint}>Hint</button> : null}
-            {this.state.showHint ? <div>{this.state.chapter[0].hint}</div> : null}
-          </Col>
-          <Col md="6">
-            <h3>Level {this.state.chapter[0].level}</h3>
-            <h3>Points: {this.state.chapter[0].points * this.state.chapter[0].level}</h3>
-            <Image image={this.state.image} />
-            {this.state.chapter[0].level > 1 ? <button onClick={this.getPreviousLevel}>Previous Level</button> : null}
-            {this.state.showNextLevel ? <button onClick={this.hideNextLevelButton}>Next Level</button> : null}
-          </Col>
-        </Row>
-      </Container>
+      <div>
+          <Row>
+            <Col md="6" className="leftHalf"> 
+              <Learn chapter={this.state.chapter} />
+              <Instruction chapter={this.state.chapter} />
+              <Challenge chapter={this.state.chapter} changeImage={this.changeImage} setLevel={this.setLevel} showNextLevelButton = {this.showNextLevelButton} showHintButton={this.showHintButton} />
+              {this.state.showHintButton ? <button className="hint button" onClick={this.showHint}>Hint</button> : null}
+              {this.state.showHint ? <div id="hint">{this.state.chapter[0].hint}</div> : null}
+              <br />
+              <Row>
+                <Col md="6">
+                  {this.state.chapter[0].level > 1 ? <button className="button" onClick={this.getPreviousLevel}>Previous Level</button> : null}
+                </Col>
+                <Col md="6" className="right">
+                  {this.state.showNextLevel ? <button className="button" onClick={this.hideNextLevelButton}>Next Level</button> : null}
+                </Col>
+              </Row>
+            </Col>
+            <Col md="6" className="rightHalf">
+            <Row className="header">
+              <Col md="6" className="left">
+                <strong><p className="levelHeader">
+
+
+
+
+    <div>
+        <Navbar color="faded" light>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse className="navbar-toggleable-md" isOpen={this.state.dropdownOpen}>
+            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/">Components</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+
+
+
+
+
+                <Navbar light id="navbar">
+                  <NavbarToggler onClick={this.toggle}>
+                    <Collapse className="navbar-toggleable-xs" isOpen={this.state.dropdownOpen}>
+                    <NavbarBrand href="/">Levels</NavbarBrand>
+                    <Nav navbar>
+                      {this.state.numbers.map((num) => {
+                        return <NavItem>
+                          <NavLink href="/">
+                          <div onClick={() => this.getSpecificLevel(num)}>Level {num}</div>
+                          </NavLink>
+                          </NavItem>;
+                      })}
+                      <NavItem>
+                        <a href="http://www.cartoonnetwork.com/games/powerpuff-girls/glitch-fixers/index.html" target="_blank">Glitch Fixers</a>
+                      </NavItem>
+                      </Nav>
+                    </Collapse>
+                  </NavbarToggler>
+                </Navbar>
+                Level {this.state.chapter[0].level}</p></strong>
+              </Col>
+              <Col md="6" className="right">
+                <strong><p className="levelHeader">Points: {this.state.chapter[0].points * this.state.chapter[0].level}</p></strong>
+              </Col>
+            </Row>
+              <Image image={this.state.image} />
+            </Col>
+          </Row>
+        </div>
     );
   }
 }

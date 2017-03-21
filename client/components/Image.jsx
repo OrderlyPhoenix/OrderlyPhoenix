@@ -11,7 +11,7 @@ class Image extends React.Component {
   render() {
     return (
       <div>
-        <img src={this.props.image} />
+        <img src={this.props.image} className="mainImage"/>
       </div>
     );
   }

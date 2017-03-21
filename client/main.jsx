@@ -18,5 +18,3 @@ const Main = (
 ); 
 
 ReactDOM.render(Main, document.getElementById('main'));
-
-

@@ -10,9 +10,9 @@ class Instruction extends React.Component {
 
   render() {
     return (
-      <div>
-        <strong><p> Instructions </p></strong>
-        <p>{this.props.chapter ? this.props.chapter[0].instructionText : null}</p>
+      <div id="instruction">
+        <strong><p className="header"> Instructions </p></strong>
+        <p className="content">{this.props.chapter ? this.props.chapter[0].instructionText : null}</p>
       </div>
     );
   }
