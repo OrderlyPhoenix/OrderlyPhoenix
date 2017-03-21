@@ -7,7 +7,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import Cookies from 'js-cookie';
-import { Nav, NavItem, NavDropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavDropdown, Navbar, NavbarToggler, NavbarBrand, Collapse, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 require('./../../public/main.css');
 
 class Game extends React.Component {
@@ -40,8 +40,8 @@ class Game extends React.Component {
     this.showHint = this.showHint.bind(this);
     this.toggle = this.toggle.bind(this);
     this.getSpecificLevel = this.getSpecificLevel.bind(this);
-    // this.createNums();
     this.getLevel();
+    this.createNums();
   }
 
   setLevel() {
@@ -162,17 +162,6 @@ class Game extends React.Component {
     }
     return (
       <div>
-        <NavDropdown id="nav-dropdown" className="navDrop" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-              <DropdownToggle nav caret>
-                Select Level
-              </DropdownToggle>
-              <DropdownMenu>
-                {this.state.numbers.map((num) => {
-                  return <DropdownItem ><div onClick={() => this.getSpecificLevel(num)}>Level {num}</div></DropdownItem>;
-                })}
-                <DropdownItem><a href="http://www.cartoonnetwork.com/games/powerpuff-girls/glitch-fixers/index.html" target="_blank">Glitch Fixers</a></DropdownItem>
-              </DropdownMenu>
-          </NavDropdown>
           <Row>
             <Col md="6" className="leftHalf"> 
               <Learn chapter={this.state.chapter} />
@@ -193,10 +182,52 @@ class Game extends React.Component {
             <Col md="6" className="rightHalf">
             <Row className="header">
               <Col md="6" className="left">
-                <strong><p>Level {this.state.chapter[0].level}</p></strong>
+                <strong><p className="levelHeader">
+
+
+
+
+    <div>
+        <Navbar color="faded" light>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse className="navbar-toggleable-md" isOpen={this.state.dropdownOpen}>
+            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/">Components</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+
+
+
+
+
+                <Navbar light id="navbar">
+                  <NavbarToggler onClick={this.toggle}>
+                    <Collapse className="navbar-toggleable-xs" isOpen={this.state.dropdownOpen}>
+                    <NavbarBrand href="/">Levels</NavbarBrand>
+                    <Nav navbar>
+                      {this.state.numbers.map((num) => {
+                        return <NavItem>
+                          <NavLink href="/">
+                          <div onClick={() => this.getSpecificLevel(num)}>Level {num}</div>
+                          </NavLink>
+                          </NavItem>;
+                      })}
+                      <NavItem>
+                        <a href="http://www.cartoonnetwork.com/games/powerpuff-girls/glitch-fixers/index.html" target="_blank">Glitch Fixers</a>
+                      </NavItem>
+                      </Nav>
+                    </Collapse>
+                  </NavbarToggler>
+                </Navbar>
+                Level {this.state.chapter[0].level}</p></strong>
               </Col>
-              <Col md="6">
-                <strong><p className="right">Points: {this.state.chapter[0].points * this.state.chapter[0].level}</p></strong>
+              <Col md="6" className="right">
+                <strong><p className="levelHeader">Points: {this.state.chapter[0].points * this.state.chapter[0].level}</p></strong>
               </Col>
             </Row>
               <Image image={this.state.image} />

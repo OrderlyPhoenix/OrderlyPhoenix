@@ -25,6 +25,10 @@ li {
   padding: 5px;
 }
 
+#challenge, #instruction, #learn {
+  font-size: 24px;
+}
+
 #body {
   background-color: #D1F0E8;
 }
@@ -36,13 +40,14 @@ li {
 
 .mainImage {
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
   border: 5px solid white;
 }
 
 .rightHalf {
   background-color: #96DBCF;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .rightHalf, .leftHalf {
@@ -64,8 +69,8 @@ li {
   background-color: #84C7B8;
   color: black;
 }
+
 .about {
-  /*width: 50%;*/
   margin-left: 42%;
   color:black;
 }
@@ -125,15 +130,16 @@ li {
 .left {
   text-align: left;
 }
+
 .about:hover {
   background-color: #96DBCF;
 }
-.navDrop {
-  margin-left: 42%;
-  width: 14%;
-  /*background-color: #84C7B8;*/
+
+.levelHeader {
+  font-size: 28px;
+  margin-top: 10px;
 }
-.navDrop:hover {
-  width: 14%;
-  background-color: #84C7B8;
+
+#navbar {
+  display: inline;
 }
